@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		04A9C539232E5BF90010A9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C538232E5BF90010A9EB /* AppDelegate.swift */; };
-		04A9C53B232E5BF90010A9EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C53A232E5BF90010A9EB /* ViewController.swift */; };
+		04A9C53B232E5BF90010A9EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C53A232E5BF90010A9EB /* MainViewController.swift */; };
 		04A9C53E232E5BF90010A9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9C53C232E5BF90010A9EB /* Main.storyboard */; };
 		04A9C540232E5BFC0010A9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9C53F232E5BFC0010A9EB /* Assets.xcassets */; };
 		04A9C543232E5BFC0010A9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9C541232E5BFC0010A9EB /* LaunchScreen.storyboard */; };
+		04A9C54B232E5D560010A9EB /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C54A232E5D560010A9EB /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04A9C535232E5BF90010A9EB /* Learn_coreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learn_coreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9C538232E5BF90010A9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04A9C53A232E5BF90010A9EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A9C53A232E5BF90010A9EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04A9C53D232E5BF90010A9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A9C53F232E5BFC0010A9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A9C542232E5BFC0010A9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9C544232E5BFC0010A9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A9C54A232E5D560010A9EB /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				04A9C538232E5BF90010A9EB /* AppDelegate.swift */,
-				04A9C53A232E5BF90010A9EB /* ViewController.swift */,
+				04A9C53A232E5BF90010A9EB /* MainViewController.swift */,
 				04A9C53C232E5BF90010A9EB /* Main.storyboard */,
 				04A9C53F232E5BFC0010A9EB /* Assets.xcassets */,
 				04A9C541232E5BFC0010A9EB /* LaunchScreen.storyboard */,
 				04A9C544232E5BFC0010A9EB /* Info.plist */,
+				04A9C54A232E5D560010A9EB /* Resnet50.mlmodel */,
 			);
 			path = Learn_coreML;
 			sourceTree = "<group>";
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A9C53B232E5BF90010A9EB /* ViewController.swift in Sources */,
+				04A9C53B232E5BF90010A9EB /* MainViewController.swift in Sources */,
+				04A9C54B232E5D560010A9EB /* Resnet50.mlmodel in Sources */,
 				04A9C539232E5BF90010A9EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H9525HG66;
 				INFOPLIST_FILE = Learn_coreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H9525HG66;
 				INFOPLIST_FILE = Learn_coreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -58,7 +58,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 fatalError("Could not get the VNCoreMLRequest")
             }
             
-            print(results)
+            if let result = results.first {
+                let classifiedItem = result.identifier
+                self.navigationItem.title = classifiedItem
+            }
         }
         
         let handler = VNImageRequestHandler(ciImage: image)
